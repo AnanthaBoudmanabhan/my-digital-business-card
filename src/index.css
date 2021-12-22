@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    background-color: #1A1B21;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.info {
+    text-align: center;
+}
+
+.info--profile {
+    width:350px;
+}
+
+.info--name {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height:30px;
+    margin-bottom: 0;
+}
+
+.info--role {
+    color: #F3BF99;
+    font-size: 13px;
+    line-height:15px;
+}
+
+.info--website {
+    color: #F5F5F5;
+    font-weight: 400;
+    font-size: 10px;
+    line-height:15px;
+}
+
+.info--buttons {
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info--buttons > a > i {
+    margin-right: 8px;
+}
+
+.info--btn-email, .info--btn-linkedin {
+    padding: 8px 16px;
+    width:125px;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;    
+    line-height:16px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+}
+
+.info--btn-email {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    color: #374151;
+}
+
+.info--btn-email:hover, .info--btn-linkedin:hover {
+    transform: scale(1.05);
+}
+
+.info--btn-linkedin  {
+    border: 1px solid #5093E2;
+    background-color: #5093E2;
+    color: #FFFFFF;
+    
+}
+
+.about, .interests {
+    padding: 0 35px;
+    line-height: 24px;
+}
+
+.about--title, .interests--title {
+    font-size: 16px;
+    color: #F5F5F5;
+    margin-bottom: 0;
+}
+
+.about--text, .interests--text {
+    font-size: 10px;
+    color: #DCDCDC;
+}
+
+.footer {
+    padding: 20px 70px;
+    font-size:25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-link {
+    color: #918E9B;
+    text-decoration: none;
+}
+
+.twitter:hover {
+    color: #00aced;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.instagram:hover {
+    color: #E33E5C;
+}
+
+.github:hover {
+    color: #4284c0;;
 }
